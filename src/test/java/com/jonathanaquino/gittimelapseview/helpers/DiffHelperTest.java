@@ -6,7 +6,7 @@ import java.util.List;
 
 import junit.framework.TestCase;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import com.jonathanaquino.gittimelapseview.Diff;
 import com.jonathanaquino.gittimelapseview.helpers.DiffHelper;

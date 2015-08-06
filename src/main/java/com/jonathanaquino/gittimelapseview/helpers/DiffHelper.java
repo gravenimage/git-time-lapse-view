@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.commons.lang.StringEscapeUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.incava.util.diff.Difference;
 
 import com.jonathanaquino.gittimelapseview.Diff;
@@ -200,8 +200,8 @@ public class DiffHelper {
         }
         // Make sure the anchor tag is not empty; otherwise the Highlight offsets seem to get messed up [Jon Aquino 2007-10-16]
         return new String[] { 
-                leftOpeningTag + "<a name='Position" + position + "'>" + StringUtils.rightPad(leftLineNumber, lineNumberWidth) + "</a>" + StringEscapeUtils.escapeHtml(leftLine) + leftClosingTag, 
-                rightOpeningTag + "<a name='Position" + position + "'>" + StringUtils.rightPad(rightLineNumber, lineNumberWidth) + "</a>" + StringEscapeUtils.escapeHtml(rightLine) + rightClosingTag };
+                leftOpeningTag + "<a name='Position" + position + "'>" + StringUtils.rightPad(leftLineNumber, lineNumberWidth) + "</a>" + StringEscapeUtils.escapeHtml4(leftLine) + leftClosingTag, 
+                rightOpeningTag + "<a name='Position" + position + "'>" + StringUtils.rightPad(rightLineNumber, lineNumberWidth) + "</a>" + StringEscapeUtils.escapeHtml4(rightLine) + rightClosingTag };
     }
 
     /**

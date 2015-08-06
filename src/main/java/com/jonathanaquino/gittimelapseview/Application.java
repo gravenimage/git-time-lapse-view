@@ -1,6 +1,6 @@
 package com.jonathanaquino.gittimelapseview;
 
-import jargs.gnu.CmdLineParser;
+import com.sanityinc.jargs.CmdLineParser;
 
 import java.io.File;
 import java.util.ArrayList;
